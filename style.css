@@ -11,8 +11,8 @@
 body {
     height: 560vh;
     /* background-attachment: local, scroll; */
-    background: url('/images/blur\ \(3\).jpg');
-    background-color: #5C5C64;
+    background: url('/images/blur.jpg');
+/*     background-color: #5C5C64; */
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
