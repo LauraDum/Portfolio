@@ -1,0 +1,665 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 700vh;
+  padding: 0px 20px;
+  margin-left: -20px;
+}
+
+/* HEADER */
+
+/* nom + phrase et logo */
+.container-first {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.container-first h1 {
+  font-size: 40px;
+  color: #ffffff;
+  padding-bottom: 150px;
+  margin-top: -70px;
+  flex-wrap: wrap;
+}
+
+.container-first h1 span {
+  /* position: relative; */
+  flex-wrap: wrap;
+}
+
+h1 .name {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 800;
+}
+
+h1 .web {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 400;
+}
+
+.small {
+  font-size: 35px;
+}
+
+/* lignes en top de la page */
+.lignes {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+}
+.l1 {
+  width: 200px;
+  height: 5px;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+.l2 {
+  width: 120px;
+  height: 5px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  position: relative;
+  top: 20px;
+}
+
+.bg .logo {
+  position: absolute;
+  right: 0.9%;
+  top: 4%;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+/* RUBRIQUE ACCUEIL */
+
+.accueil {
+  margin-top: 600px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
+  grid-template-columns:auto;
+  grid-template-rows:auto;
+  grid-template-columns: 60% auto;
+  height: auto;
+  align-self: center; */
+  /* margin-left: 50px;
+  margin-right: -100px; */
+}
+
+ul{
+  list-style-type: none;
+  /* perspective: 1000px; */
+}
+
+ul li{
+  font-family: 'Open Sans', sans-serif;
+  display: grid;
+  grid-template-columns: 20% auto;
+  border-radius:10px;
+  padding: 8px;
+  cursor: pointer;
+  transform: rotateY(-15deg) rotateX(5deg);
+  position: absolute;
+  border-bottom: 4px solid rgba(0,0,0,.2);
+  border-right: 4px solid rgba(0,0,0,.2);
+  transition: 0.7s;
+}
+
+ul li:nth-child(1){
+  color:#5A519A;
+  background-color: #8063E1;
+ background-image: linear-gradient(135deg, #ffffff, #cfcfcf);
+  top: -112px;
+  z-index: 2;
+  width: 60%;
+}
+
+ul li:nth-child(2){
+   background-color: #3F58E3;
+   background-image: linear-gradient(135deg, #ffffff, #cfcfcf);
+  z-index: 1;
+  color:#5A519A;
+  width: 60%;
+}
+
+ul li:nth-child(3){
+  color:#5A519A;
+  background-color: #352F64;
+  background-image: linear-gradient(135deg, #ffffff, #cfcfcf);
+  top: 115px;
+  z-index: 0;
+  width: 60%;
+  
+}
+
+ul li:hover{
+  transform: translateY(30px)  rotateY(-35deg) rotateX(15deg) scale(1.2);
+  z-index:3; 
+}
+
+ul li span a{
+  margin-top: -10px;
+  margin-left: 120px;
+  font-size: 20px;
+  padding-top: 50px;
+  text-decoration: none;
+  color:#5A519A;
+  position: absolute;
+}
+
+img{
+  width:80px;
+}
+
+.container h1{
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-left: -70px;
+  /* margin-right: 150px; */
+  font-family: 'Open sans', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-right: 80px;
+}
+
+.container p{
+  color:rgb(173, 173, 173);
+  font-size: 1em;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: -150px;
+} 
+
+.right {
+  margin-top: 150px;
+}
+
+/* RUBRIQUE SKILL */
+
+.banner {
+  background-color: #5A519A;
+  opacity: 69%;
+  border-radius: 80px;
+  width: 85%;
+  margin-left: 25px;
+  margin-top: 400px;
+}
+
+.banner img {
+  width:60px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.banner h2 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  position: absolute;
+  margin-left: 140px;
+  margin-top: -45px;
+  opacity: 100%;
+  font-size: 20px;
+}
+
+img {
+  opacity: 100%;    
+}
+
+.bar {
+  margin-top: 80px;
+}
+
+.SkillBar {
+  width: 80%;
+  height: 50px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 20px auto;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+#Skill-HTML {
+  width: 70%;
+  animation: Animate-HTML 4s;
+  -webkit-animation: Animate-HTML 4s;
+  -moz-animation: Animate-HTML 4s;
+  -o-animation: Animate-HTML 4s;
+  height: 50px;
+  position: absolute;
+  background-color: #365B8C;
+  border-radius: 20px;
+}
+
+span{
+  position: absolute;
+}
+
+.Skill-Area {
+  margin-top: 15px;
+  margin-left: 20px;
+  text-align: end;
+}
+
+.PercentText {
+  margin-left: 250px;
+  margin-top: 15px;
+}
+
+@keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 100%}
+}@-webkit-keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 100%}
+}@-moz-keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 100%}
+}@-o-keyframes Animate-HTML {
+  from {
+  width: 10px;
+}
+to {
+  width: 100%}
+
+}
+
+#Skill-CSS {
+  animation: Animate-CSS 5s;
+  -webkit-animation: Animate-CSS 5s;
+  -moz-animation: Animate-CSS 5s;
+  -o-animation: Animate-CSS 5s;
+  width: 55%;
+  height: 50px;
+  position: absolute;
+  background-color: #A94698;
+  border-radius: 20px;
+}
+@keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 70%}
+}@-webkit-keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 70%}
+}@-moz-keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 70%}
+}@-o-keyframes Animate-CSS {
+  from {
+  width: 10px;
+}
+to {
+  width: 70%}
+}
+
+#Skill-React {
+  animation: Animate-React 5s;
+  -webkit-animation: Animate-React 5s;
+  -moz-animation: Animate-React 5s;
+  -o-animation: Animate-React 5s;
+  width: 10%;
+  height: 50px;
+  position: absolute;
+  background-color: #159CC1;
+  border-radius: 20px;
+}
+@keyframes Animate-React {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-webkit-keyframes Animate-React {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-moz-keyframes Animate-React {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-o-keyframes Animate-React {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}
+
+#Skill-Angular {
+  animation: Animate-Angular 4s;
+  -webkit-animation: Animate-Angular 4s;
+  -moz-animation: Animate-Angular 4s;
+  -o-animation: Animate-Angular 4s;
+  width: 10%;
+  height: 50px;
+  position: absolute;
+  background-color: #8297D0;
+  border-radius: 20px;
+}
+@keyframes Animate-Angular {
+  from {
+  width: 10px;
+}
+to {
+  width: 65%}
+}@-webkit-keyframes Animate-Angular {
+  from {
+  width: 10px;
+}
+to {
+  width: 65%}
+}@-moz-keyframes Animate-Angular {
+  from {
+  width: 10px;
+}
+to {
+  width: 65%}
+}@-o-keyframes Animate-Angular {
+  from {
+  width: 10px;
+}
+to {
+  width: 65%}
+}
+
+#Skill-Git {
+  animation: Animate-Git 4s;
+  -webkit-animation: Animate-Git 4s;
+  -moz-animation: Animate-Git 4s;
+  -o-animation: Animate-Git 4s;
+  width: 60%;
+  height: 50px;
+  position: absolute;
+  background-color: #1D314A;
+  border-radius: 20px;
+}
+@keyframes Animate-Git {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-webkit-keyframes Animate-Git {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-moz-keyframes Animate-Git {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}@-o-keyframes Animate-Git {
+  from {
+  width: 10px;
+}
+to {
+  width: 40%}
+}
+
+/* RUBRIQUE PROJET */
+
+.banner2 {
+  background-color: #1D314A;
+  opacity: 69%;
+  border-radius: 80px;
+  width: 85%;
+  margin-left: 25px;
+  margin-top: 200px;
+}
+
+.banner2 img {
+  width:60px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.banner2 h2 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -45px;
+  opacity: 100%;
+  font-size: 20px;
+}
+
+/* rubrique projet BOOKI */
+
+.container-projet .left-projet h2{
+  font-size: 1.5em;
+  margin-top: 50px;
+  margin-left: 80px;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-right: 80px;
+}
+
+.container-projet .left-projet p{
+  color:rgb(173, 173, 173);
+  font-size: 1em;
+  font-family: 'Open sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: -5px;
+} 
+
+.left-projet img {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 350px;
+
+}
+
+.smart1 {
+  margin-left: -55px;
+  margin-top: 100px;
+}
+
+.smart2 {
+  margin-left: -55px;
+  margin-top: 100px;
+}
+
+.center-projet {
+  margin-left: 80px;
+  margin-top: 70px;
+}
+
+/* bouton lien booki */
+
+button {
+  background-image: linear-gradient(135deg, #f3b592, #5c43ca);
+  padding-right: 150px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 50px;
+  border: none;
+
+}
+
+.center-projet span{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  padding-left: 15px;
+  padding-top: 12px;
+}
+
+.center-projet img {
+  width: 40px;
+}
+
+/* RUBRIQUE CONTACT */
+
+#contact {
+  margin-left: -100px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact .banner3 {
+  background-color: #47505B;
+  opacity: 69%;
+  border-radius: 80px;
+  width: 65%;
+  margin-left: 135px;
+  margin-top: 120px;
+}
+
+#contact .banner3 img {
+  width:60px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+#contact .banner3 h2 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: -49px;
+  opacity: 100%;
+  font-size: 20px;
+}
+
+
+
+/* COLONNE DE GAUCHE */
+
+#contact .left-contact {
+  /* display: flex;
+  flex-direction: column; */
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin-top: 40px;
+  margin-left: -70px;
+}
+
+.left-card {
+  margin-bottom: 40px;
+}
+
+.left-contact h2 {
+  position: relative;
+  font-weight: 700;
+  margin-top: -20px;
+  margin-left: 315px;
+  font-size: 15px;
+}
+
+.left-contact p{
+  font-weight: 400;
+  position: relative;
+  margin-left: 315px;
+  font-size: 15px;
+}
+
+.pic-left {
+  margin-left: 200px;
+  width: 60px;
+}
+
+.rond-left {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 20px;
+  opacity: 60%;
+  width: 80px;
+}
+
+
+/* COLONNE DE DROITE */
+
+#contact .right-contact {
+  /* display: flex;
+  flex-direction: column; */
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin-top: 635px;
+  margin-left: -70px;
+}
+
+.right-card {
+  margin-bottom: 40px;
+}
+
+.right-contact h2 {
+  position: relative;
+  font-weight: 700;
+  margin-top: -20px;
+  margin-left: 315px;
+  font-size: 15px;
+}
+
+.right-contact p{
+  font-weight: 400;
+  position: relative;
+  margin-left: 315px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.pic-right {
+  margin-left: 200px;
+  width: 60px;
+}
+
+.rond-right {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 20px;
+  opacity: 60%;
+  width: 80px;
+}
