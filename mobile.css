@@ -623,6 +623,7 @@ button {
   font-size: 15px;
   margin-top: 635px;
   margin-left: -70px;
+  text-decoration: none;
 }
 
 .right-card {
@@ -643,7 +644,6 @@ button {
   margin-left: 315px;
   font-size: 15px;
   color: white;
-  text-decoration: none;
 }
 
 .pic-right {
