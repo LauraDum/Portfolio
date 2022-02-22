@@ -139,11 +139,6 @@ ul li:nth-child(3){
   
 }
 
-ul li:hover{
-  transform: translateY(30px)  rotateY(-35deg) rotateX(15deg) scale(1.2);
-  z-index:3; 
-}
-
 ul li span a{
   margin-top: -10px;
   margin-left: 120px;
